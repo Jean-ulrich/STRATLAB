@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "trebuchet MS";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    /* Permet de rajouter une ombre */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1), 
+              -4px -4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.logo {
+display: flex;
+align-items: center;
+font-weight: bold;
+font-size: 20px;
+}
+
+.logo svg {
+    width: 40px;
+    height: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.btnBox button {
+    padding: 8px 16px;
+    border-radius: 16px;
+    background-color: white;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+button.btnVert {
+    background-color: green;
+    color: white;
+}
+
+.btnBox button:hover {
+    opacity: 0.6;
+    transition: 0.3;
+    cursor: pointer;
+}
+
+. .btnBox .btnMenu {
+
+}
+@media(max-width: 768px) {
+    nav {
+        display: none;
+    }
+}
