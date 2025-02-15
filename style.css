@@ -61,6 +61,11 @@ button.btnVert {
     color: white;
 }
 
+nav ul li a:hover {
+    color: green;
+    border-bottom: solid 2px green;
+}
+
 .btnBox button:hover {
     opacity: 0.6;
     transition: 0.3;
@@ -83,12 +88,47 @@ button.btnVert {
     width: 100vw;
     display: flex;
     justify-content: flex-end;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .altNav ul {
     background-color: white;
     flex-direction: column;
     padding: 20px;
+}
+
+.cache {
+    /* display: none; */
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+    right: 100vw;
+}
+
+main{
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-indic {
+    color: green;
+    font-size: 14px;
+    font-weight: bold;
+    border-left: solid 2px green;
+    padding-left: 8px;
+}
+
+.hero-img {
+    width: 50%;
+}
+
+.reviews {
+    background-color: chocolate;
 }
 
 @media(max-width: 768px) {
